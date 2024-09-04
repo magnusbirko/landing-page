@@ -3,6 +3,11 @@
 
 /* SETTINGS */
 
+/* TYPOGRAPHY */
+
+* {
+  font-family: "Roboto";
+}
 /* SETUP */
 
 body {
@@ -17,28 +22,6 @@ html {
   --bgc: #1f2937;
   --stx: #e5e7eb;
 }
-
-/* DEV STYLES */
-
-/* header {
-  border: 2px solid red;
-}
-main {
-  border: 2px solid red;
-}
-footer {
-  border: 2px solid red;
-}
-
-.section {
-  border: 2px solid blue;
-}
-
-inner-column {
-  border: 2px solid orange;
-} */
-
-/* STRUCTURE */
 
 main {
   display: flex;
@@ -68,10 +51,48 @@ inner-column {
   padding-bottom: 32px;
 }
 
-/* TYPOGRAPHY */
+header {
+  background-color: var(--bgc);
+}
 
-* {
+.header {
+  display: flex;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+footer {
+  background-color: var(--bgc);
+}
+
+.footer {
+  display: flex;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-links {
+  display: flex;
+  gap: 8px;
+}
+.header-links a {
   font-family: "Roboto";
+  color: var(--stx);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.header-logo {
+  font-family: "Roboto";
+  color: var(--stx);
+  font-weight: 900;
 }
 
 /* HERO */
@@ -150,6 +171,7 @@ inner-column {
 .card-txt {
   font-size: 12px;
   text-align: center;
+  color: var(--iht);
 }
 
 /* QUOTE */
@@ -194,7 +216,7 @@ inner-column {
   background-color: var(--cta);
   max-height: 100px;
   padding: 38px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .cta-header {
@@ -205,4 +227,9 @@ inner-column {
 .cta-text {
   color: var(--stx);
   font-size: 14px;
+}
+
+.copyright {
+  text-align: center;
+  color: var(--stx);
 }
